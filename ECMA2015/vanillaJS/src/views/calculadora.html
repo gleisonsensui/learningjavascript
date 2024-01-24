@@ -17,59 +17,56 @@ código JavaScript a ser executado quando o usuário insere dados ou dá um cliq
 -->
     <table>
       <tr>
-        <th>Enter Loan Data:</th>
+        <th>Entrada dos dados do empréstimo:</th>
         <td></td>
-        <th>Loan Balance, Cumulative Equity, and Interest Payments</th>
+        <th>Saldo do Empréstimo, Total acumulado, total de juros</th>
       </tr>
       <tr>
-        <td>Amount of the loan ($):</td>
-        <td><input id="amount" onchange="calculate();" /></td>
+        <td><label for="valor-emprestimo" class="label">Valor do empréstimo(R$):</label></td>
+        <td><input id="valor-emprestimo" onchange="calculate();" /></td>
         <td rowspan="8">
-          <canvas id="graph" width="400" height="250"></canvas>
+          <canvas id="grafico" width="400" height="250"></canvas>
         </td>
       </tr>
       <tr>
-        <td>Annual interest (%):</td>
-        <td><input id="apr" onchange="calculate();" /></td>
+        <td><label for="juros-anual" class="label">Juros Anual (%):</label></td>
+        <td><input id="juros-anual" onchange="calculate();" /></td>
       </tr>
       <tr>
-        <td>Repayment period (years):</td>
-        <td><input id="years" onchange="calculate();" /></td>
-      </tr>
-
-      <tr>
-        <td>Zipcode (to find lenders):</td>
-        <td><input id="zipcode" onchange="calculate();" /></td>
+        <td><label for="prazo-pagamento" class="label">Prazo de pagamento (a.a):</label></td>
+        <td><input id="prazo-pagamento" onchange="calculate();" /></td>
       </tr>
 
       <tr>
-        <th>Approximate Payments:</th>
+        <td><label for="codigo-postal" class="label">CEP (para encontrar credores):</label></td>
+        <td><input id="codigo-postal" onchange="calculate();" /></td>
+      </tr>
+
+      <tr>
+        <th>Pagamento aproximado:</th>
         <td><button onclick="calculate();">Calculate</button></td>
       </tr>
       <tr>
-        <td>Monthly payment:</td>
-        <td>$<span class="output" id="payment"></span></td>
+        <td>Parcela mensal:</td>
+        <td>$<span class="output" id="parcela-mensal"></span></td>
       </tr>
       <tr>
-        <td>Total payment:</td>
-        <td>$<span class="output" id="total"></span></td>
+        <td>Total financiado:</td>
+        <td>$<span class="output" id="total-financiado"></span></td>
       </tr>
       <tr>
-        <td>Total interest:</td>
-        <td>$<span class="output" id="totalinterest"></span></td>
+        <td>Total de juros:</td>
+        <td>$<span class="output" id="total-juros"></span></td>
       </tr>
       <tr>
-        <th>Sponsors:</th>
+        <th>Fiador:</th>
         <td colspan="2">
-          Apply for your loan with one of these fine lenders:
-          <div id="lenders"></div>
+          <div id="lenders">
+            <input type="text" placeholder="Informe o nome do fiador">
+          </div>
         </td>
       </tr>
     </table>
-    <!-- O restante deste exemplo é código JavaScript na marca <script> a seguir -->
-    <!-- Normalmente, este script ficaria na marca <head> do documento acima, mas -->
-    <!-- é mais fácil entendê-lo aqui, depois de ter visto seu contexto HTML. -->
-
     <script src="../public/scripts/b0.1.calculadora.js"></script>
   </body>
 </html>
