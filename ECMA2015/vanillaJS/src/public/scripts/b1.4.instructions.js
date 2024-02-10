@@ -38,7 +38,16 @@ const funcao = () => {
 funcao()
 
 
+// Instrução condicional
+if(!nameUser) nameUser = "siclano";
+console.log(nameUser)
 
+if(!nameUser) { 
+    nameUser = 'siclaninho'
+} else {
+    nameUser = "fulanão"
+}
+console.log(nameUser)
 
 
 
