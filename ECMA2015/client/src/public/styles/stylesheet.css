@@ -1,0 +1,104 @@
+:root {
+    --mint-blue-color1: #33ccff;
+    --mint-blue-color2: #2699e6;
+    --mint-blue-color3: #1a66cc;
+    --mint-blue-color4: #0d33b3;
+    --mint-blue-color5: #000099;
+}
+
+@font-face {
+    src: url('../fonts/LEMONMILK-Light.otf');
+    font-family: 'Lemon Milk';
+}
+
+/*  Resetar configurações default dos elementos html*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lemon Milk';
+
+}
+
+/*  Retirar os marcadores de item de lista, independente de ser numerico ou figura*/
+li {
+    list-style: none;
+}
+
+/* Retirar a decoração do texto de link default do elemento html */
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+header {
+    width: 100%;
+    background-color: var(--mint-blue-color4);
+    position: fixed;
+    z-index: 1;
+}
+
+.ghost {
+    width: 100%;
+    height: 80px;
+    z-index: 2;
+}
+
+.container {
+    display: grid;
+    max-width: 90%;
+    height: 100px;
+    margin: 0 auto;    
+    padding: 0 60px;
+    height: 80px;
+    grid-template-areas: "lgo ... nav";
+    grid-template-columns: auto 1fr auto;
+    align-content: center;
+}
+
+.logo {
+    grid-area: lgo;
+}
+
+.nav-bar {
+    grid-area: nav;
+    font-size: 18px;
+    display: grid;
+    align-content: center;
+}
+
+.nav-bar ul {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 20px;
+}
+
+.nav-bar a {
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #25eff7;
+}
+
+.logo img{
+    height: 80px;;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
