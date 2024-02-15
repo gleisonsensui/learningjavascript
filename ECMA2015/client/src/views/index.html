@@ -1,36 +1,149 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Learning JavaScript</title>
-    <link rel="stylesheet" href="../public/styles/stylesheet.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../public/styles/stylesheet.css" />
+  </head>
+  <body>
     <!-- Tag de conteudo para cabeçalhos-->
     <header>
-        <div class="container">
-            <div class="logo"><img src="../public/img/logoFormat.png" alt=""></div>
-            <nav class="nav-bar">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Games</a></li>
-                    <li><a href="#">Contato</a></li>
-                </ul>
-            </nav>
+      <div class="container">
+        <div class="logo">
+          <img src="../public/img/logoFormat.png" alt="" />
         </div>
+        <nav class="nav-bar">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Games</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
-    <section class="ghost">
-        
-    </section>
-    
+    <section class="ghost"></section>
+
     <main>
+      <!-- Tag semantica de Seções de conteudo no documento HTML -->
+      <section>
+        <!-- Tag semantica de conteudo de importancia contextual do documento html-->
+        <article>
+          <!-- Heading: Tag de titulo que define o conteudo mais importante do documento html-->
+          <h1>HTML Fundamentos</h1>
+          <!-- Tag de paragrafo   -->
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+            corporis molestias minus exercitationem amet recusandae illo quos
+            nihil, hic harum eius quasi odio nostrum illum atque veritatis eos
+            accusamus quo!
+          </p>
+        </article>
+      </section>
+      <section>
+        <article>
+          <!-- Tag de titulo de menor importancia contextual-->
+          <h2>Listagens</h2>
+          <!-- Tag de lista não ordenada-->
+          <ul>
+            <caption>
+              Lista não Ordanada
+            </caption>
+            <li>Arroz</li>
+            <li>Feijão</li>
+            <li>Macarrão</li>
+            <li>Bife</li>
+            <li>Salada</li>
+          </ul>
 
+          <!-- Tag de lista ordada -->
+          <ol>
+            <caption>
+              Lista Ordenada
+            </caption>
+            <li>Estudar HTML</li>
+            <li>Estudar CSS</li>
+            <li>Estudar JavaScript</li>
+            <li>Estudar Node</li>
+            <li>Estudar React</li>
+            <li>Estudar Angular</li>
+            <li>Estudar Vue</li>
+            <li>Estudar Banco de Dados Relacional</li>
+            <li>Estudar Banco de Dados Não Relacional</li>
+          </ol>
+        </article>
+      </section>
+      <section>
+        <article>
+          <!-- Tag para titulo de importancia menor-->
+          <h3>Links para outras paginas</h3>
+          <!-- Tag para link [hiperlink] com outras pagina-->
+          <a href="https://google.com" target="_blank"
+            >Clique aqui e vamos para o Google.</a
+          >
+          <br />
+          <a href="https://facebook.com" target="_blank"
+            >Clique aqui e vamos para o Facebook.</a
+          >
+        </article>
+      </section>
+      <section>
+        <!-- Tag para titulo de importancia menor-->
+        <h3>Area de Imagens</h3>
+        <!-- Image via url -->
+            <img src="https://images.pexels.com/photos/20234378/pexels-photo-20234378.jpeg" alt="Imagem de ">
 
+        <!-- Imagem Fixa -->
+        <img src="../public/img/imagemArara.jpeg" alt="Imagem arara">
+
+      </section>
+      <section>
+        <h3>Seção de Tabela</h3>
+        <!-- Tag de tabela -->
+        <table>
+            <thead>
+                <tr>
+                    <td>coluna 1</td>
+                    <td>coluna 2</td>
+                    <td>coluna 3</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>campo 1</td>
+                    <td>campo 2</td>
+                    <td>campo 3</td>
+                </tr>
+                <tr>
+                    <td>campo 1</td>
+                    <td>campo 2</td>
+                    <td>campo 3</td>
+                </tr>
+                <tr>
+                    <td>campo 1</td>
+                    <td>campo 2</td>
+                    <td>campo 3</td>
+                </tr>
+                <tr>
+                    <td>campo 1</td>
+                    <td>campo 2</td>
+                    <td>campo 3</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <td rowspan="3" colspan="2">Total</td>
+            </tfoot>
+        </table>
+      </section>
+      <section>
+        <h3>Seção de modelage de estrutura</h3>
+        <div class="container">
+            <div> area de estrutura 01 - DIV </div>
+            <div> Area de estrutura 02 - DIV</div>
+        </div>
+      </section>
     </main>
-    <footer>
-
-    </footer>
-</body>
+    <footer></footer>
+  </body>
 </html>
