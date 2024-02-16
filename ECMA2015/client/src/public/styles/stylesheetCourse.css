@@ -6,21 +6,6 @@
     --mint-blue-color5: #000099;
 }
 
-@font-face {
-    src: url('../fonts/LEMONMILK-Light.otf');
-    font-family: 'Lemon Milk';
-}
-
-@font-face {
-    src: url('../fonts/Roboto-Light.ttf');
-    font-family: 'Roboto';
-}
-
-@font-face {
-    src: url('../fonts/Sixtyfour-Regular.ttf');
-    font-family: 'Sixtyfour';
-}
-
 /*  Resetar configurações default dos elementos html*/
 * {
     padding: 0;

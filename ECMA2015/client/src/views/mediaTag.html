@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Tags</title>
+    <link rel="stylesheet" href="../public/styles/stylesheet.css" />
+  </head>
+  <body>
+    <!-- Tag de conteudo para cabeçalhos-->
+    <header>
+      <div class="container">
+        <div class="logo">
+          <img src="../public/img/logoFormat.png" alt="" />
+        </div>
+        <nav class="nav-bar">
+          <ul>
+            <li><a href="i">Home</a></li>
+            <li><a href="#">Learning</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Games</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="ghost"></section>
+
+    <main>
+      <!-- Tag semantica de Seções de conteudo no documento HTML -->
+      <section>
+        <!-- Tag semantica de conteudo de importancia contextual do documento html-->
+        <article>
+          <!-- Heading: Tag de titulo que define o conteudo mais importante do documento html-->
+          <h1>Video Section</h1>
+          <!-- Tag de Video   -->
+          <video controls>
+            <!-- Tag de localização e tipo do arquivo de video -->
+            <source src="../public/video/cidade.mp4" type="video/mp4">
+          </video>
+        </article>
+      </section>
+      <section>
+        <article>
+          <h2>Audio Section</h2>
+          <!-- Tag de Audio -->
+          <audio controls>
+            <source src="../public/audio/music.mp3" type="audio/mpeg">
+          </audio>
+        </article>
+      </section>
+      <section>
+        <article>
+          <h2>Picture Section</h2>
+          <figure>
+            <img src="../public/img/ricefield.jpg" alt="Campo de arroz">
+            <figcaption>Campo de arroz</figcaption>
+          </figure>
+        </article>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>

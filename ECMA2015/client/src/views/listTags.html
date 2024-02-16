@@ -51,14 +51,14 @@
         </ul>
       </section>
 
-      <section>
+      <section id="ordened-list">
         <h2>Lista Ordenada</h2>
         <!-- Tag de lista ordada -->
         <ol>
           <caption>
             Lista Ordenada
           </caption>
-          <li>Estudar HTML</li>
+          <li class="ordened-list">Estudar HTML</li>
           <li>Estudar CSS</li>
           <li>Estudar JavaScript</li>
           <li>Estudar Node</li>
@@ -72,7 +72,30 @@
 
       <section>
         <h2>Data list</h2>
-        
+        <p class="explicacao-tag">
+          A tag datalis serve para carregar uma lista, dentro de um form, a
+          partir de um input, servindo como um filtro autocomplete de seleção de
+          dados.
+        </p>
+        <form action="">
+          <input list="animais" name="animal" />
+          <datalist id="animais">
+            <option value="Cachorro"></option>
+            <option value="Gato"></option>
+            <option value="Cavalo"></option>
+            <option value="Elefante"></option>
+          </datalist>
+        </form>
+      </section>
+      <section>
+        <h2>Progress Section</h2>
+        <p class="explicacao-tag">
+          A tag progress serve para criar barras de progresso ou carregamento
+          sem o auxilio de CSS ou JavaScript, somente com a atualização dos
+          atributos de valores de progresso. Trata-se de uma barra de loading
+          nativa no html5.
+        </p>
+        <progress value="63" max="100"></progress>
       </section>
     </main>
     <footer></footer>
