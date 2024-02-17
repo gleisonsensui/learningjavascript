@@ -1,0 +1,92 @@
+:root {
+    --mint-blue-color1: #33ccff;
+    --mint-blue-color2: #2699e6;
+    --mint-blue-color3: #1a66cc;
+    --mint-blue-color4: #0d33b3;
+    --mint-blue-color5: #000099;
+}
+
+
+/*  Background Color: Cores de fundo do elemento    */
+
+.back-color-fixed {
+    height: 30vh;
+    background-color: #000;
+    color: yellow;
+}
+
+.back-color-opacity {
+    height: 30vh;
+    color: #fff;
+    background-color: blue;
+    opacity: 0.2;
+}
+
+
+/*  Background Image: Imagens como fundo do elemento hmtl   */
+.image-1 {
+    height: 447px;
+    color: #000;
+    background-image: url("../img/pexels-monayem-billah-20161587.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.image-2 {
+    height: 640px;
+    color: #000;
+    background-image: url('../img/pexels-jari-van-de-vel-18189590.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.image-3 {
+    height: 640px;
+    color: #000;
+    background-image: url('../img/pexels-helena-jankovičová-kováčová-18473907.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

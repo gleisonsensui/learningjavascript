@@ -1,0 +1,148 @@
+:root {
+    --mint-blue-color1: #33ccff;
+    --mint-blue-color2: #2699e6;
+    --mint-blue-color3: #1a66cc;
+    --mint-blue-color4: #0d33b3;
+    --mint-blue-color5: #000099;
+}
+
+/*  Cores no CSS    */
+.rgb-color-container {
+    border: 2px solid rgb(255, 0, 0);
+    height: 30vh;
+}
+
+.rgb {
+    /* Definindo cor com regras RGB */
+    color: rgb(0, 0, 255);
+}
+
+
+.rgba-color-container {
+    border: 2px solid rgba(0, 0, 0, 1);
+    background-color: rgba(0, 0, 255, 1);
+    height: 30vh;
+}
+
+.rgba {
+    color: rgba(255, 255, 255, 1);
+}
+
+.rgba-opacity {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.hexa-color-container {
+    border: 2px solid rgb(0, 255, 0);
+    height: 30vh;
+}
+
+.hexa-1 {
+    color: #55a355;
+}
+
+.hexa-2 {
+    color: #225577;
+}
+
+.hexa-3 {
+    color: #339988;
+}
+
+.hexa-4 {
+    color: #ff3387;
+}
+
+.hsl-color-container {
+    border: 2px solid hsl(0, 0%, 0%);
+    height: 30vh;
+}
+
+.hsl {
+    color: hsl(201, 82%, 48%);
+}
+
+
+/*  Background Color: Cores de fundo do elemento    */
+
+.back-color-fixed {
+    height: 30vh;
+    background-color: #000;
+    color: yellow;
+}
+
+.back-color-opacity {
+    height: 30vh;
+    color: #fff;
+    background-color: blue;
+    opacity: 0.2;
+}
+
+
+/*  Background Image: Imagens como fundo do elemento hmtl   */
+.image-1 {
+    height: 447px;
+    color: #000;
+    background-image: url("../img/pexels-monayem-billah-20161587.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.image-2 {
+    height: 640px;
+    color: #000;
+    background-image: url('../img/pexels-jari-van-de-vel-18189590.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.image-3 {
+    height: 640px;
+    color: #000;
+    background-image: url('../img/pexels-helena-jankovičová-kováčová-18473907.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

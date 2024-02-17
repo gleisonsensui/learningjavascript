@@ -6,30 +6,6 @@
     --mint-blue-color5: #000099;
 }
 
-@font-face {
-    src: url('../fonts/LEMONMILK-Light.otf');
-    font-family: 'Lemon Milk';
-}
-
-@font-face {
-    src: url('../fonts/Roboto-Light.ttf');
-    font-family: 'Roboto';
-}
-
-@font-face {
-    src: url('../fonts/Sixtyfour-Regular.ttf');
-    font-family: 'Sixtyfour';
-}
-
-/*  Resetar configurações default dos elementos html*/
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto';
-
-}
-
 /*  Retirar os marcadores de item de lista, independente de ser numerico ou figura*/
 li {
     list-style: none;
@@ -48,6 +24,34 @@ header {
     position: fixed;
     z-index: 1;
 }
+
+section img {
+    width: 400px;
+}
+
+
+
+
+section {
+    margin-top: 10px;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+
+video {
+    width: 320px;
+    height: 240px;
+}
+
+
+footer {
+    width: 100%;
+    background-color: var(--mint-blue-color4);
+    align-items: center;
+}
+
+
 
 .ghost {
     width: 100%;
@@ -98,39 +102,6 @@ header {
     font-size: 16px;
     font-weight: bold;
 }
-
-li.ordened-list{
-    list-style: disc;
-    color: blue;
-}
-
-
-section img {
-    width: 400px;
-}
-
-
-
-
-section {
-    margin-top: 10px;
-    border: 1px solid black;
-    padding: 5px;
-}
-
-
-video {
-    width: 320px;
-    height: 240px;
-}
-
-
-footer {
-    width: 100%;
-    background-color: var(--mint-blue-color4);
-    align-items: center;
-}
-
 
 
 

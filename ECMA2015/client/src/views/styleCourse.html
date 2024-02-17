@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fundamentos de CSS</title>
     <!-- External style import -->
-    <link rel="stylesheet" href="../public/styles/stylesheet.css" />
-    <link rel="stylesheet" href="../public/styles/stylesheetCourse.css" />
+    <!-- Area de estilos externos -->
+    <link rel="stylesheet" href="../public/styles/resetGeneralesStyles.css">
+    <link rel="stylesheet" href="../public/styles/tagsStyles.css">
+    <link rel="stylesheet" href="../public/styles/colorsStyles.css">
+    <link rel="stylesheet" href="../public/styles/backgroendStyles.css">
     <!-- Internal style tag -->
     <style>
       .container-internal .internal-style {
@@ -47,25 +50,26 @@
       <section class="container-external">
         <div class="color-container">
           <div class="hexa-color-container">
-            <p class="hexa">
+            <h2>Seção de cores Hexadecimal</h2>
+            <p class="hexa-1">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse
               beatae qui quod provident distinctio eum alias minus, excepturi
               voluptatum mollitia nihil unde, inventore non eius enim? Deserunt
               quibusdam laboriosam accusamus?
             </p>
-            <p class="hexa">
+            <p class="hexa-2">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt
               quam debitis iure at aliquam? Assumenda repellendus, eligendi,
               obcaecati, facere aliquid eos suscipit nisi earum itaque
               temporibus saepe? Corrupti, magnam voluptatem.
             </p>
-            <p class="hexa">
+            <p class="hexa-3">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               Accusantium tenetur debitis voluptatibus ipsum iure natus magni
               maiores voluptates laboriosam eligendi quos quas magnam, nulla
               repudiandae illum consectetur harum iusto veritatis.
             </p>
-            <p class="hexa">
+            <p class="hexa-4">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               Assumenda, fugiat. Dignissimos voluptatum excepturi dolorem
               necessitatibus provident ipsa mollitia. Animi sit quibusdam
@@ -74,6 +78,7 @@
             </p>
           </div>
           <div class="rgb-color-container">
+            <h2>Secão de cores em RGB</h2>
             <p class="rgb">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
               aut fuga voluptatum reprehenderit quis dolores eos officiis
@@ -100,6 +105,7 @@
             </p>
           </div>
           <div class="rgba-color-container">
+            <h2 class="rgba">Secão de cores RGBA</h2>
             <p class="rgba">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi
               ipsum debitis nemo architecto itaque assumenda, voluptatum
@@ -112,7 +118,7 @@
               illum rem expedita voluptates exercitationem, temporibus facere
               atque quidem molestiae alias hic culpa.
             </p>
-            <p class="rgba">
+            <p class="rgba-opacity">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex
               magnam eius deserunt explicabo, quisquam officia corporis!
               Voluptate odio, exercitationem mollitia atque, tempora inventore
@@ -126,6 +132,7 @@
             </p>
           </div>
           <div class="hsl-color-container">
+            <h2>Seção de corem em HSL</h2>
             <p class="hsl">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
               praesentium amet explicabo beatae voluptatem veritatis optio
@@ -151,6 +158,36 @@
               assumenda unde. Aliquid.
             </p>
           </div>
+        </div>
+      </section>
+      <section>
+        <h2>Seção de Background</h2>
+        <div class="background-color-container">
+          <div class="back-color-fixed">
+            <h2>Backgroud Color fixed</h2>
+
+          </div>
+          <div class="back-color-opacity">
+            <h2>Backgroud color opacity</h2>
+          </div>
+
+        </div>
+        <div class="background-image-container">
+          <figure class="image-1">
+            <h2>Imagem repeat</h2>
+            <p>Imagem apenas com a regra de carregamento como background</p>
+            <figcaption>Foto de Monayem Billah: <a href="https://www.pexels.com/pt-br/foto/agricultura-interior-colheita-safra-20161587/" target="_blank">agricultura-interior-colheita-safra</a></figcaption>
+          </figure>
+          <figure class="image-2">
+            <h2>Imagem com tratamento de positionamento</h2>
+            <p>imagem com tratamento de background-position: center</p>
+            <figcaption>Foto de Jari Van de Vel: <a href="https://www.pexels.com/pt-br/foto/panda-vermelho-raposa-de-fogo-sentado-tronco-18189590/" target="_blank">panda-vermelho-raposa-de-fogo-sentado-tronco</a></figcaption>
+          </figure>
+
+          <figure class="image-3">
+            <h2>Imagem 03</h2>
+            <figcaption>Foto de Helena Jankovičová Kováčová: <a href="https://www.pexels.com/pt-br/foto/coniferas-grama-parque-verao-18473907/">coniferas-grama-parque-verao</a></figcaption>
+          </figure>
         </div>
       </section>
     </main>

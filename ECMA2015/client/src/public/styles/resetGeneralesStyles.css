@@ -1,0 +1,32 @@
+:root {
+    --mint-blue-color1: #33ccff;
+    --mint-blue-color2: #2699e6;
+    --mint-blue-color3: #1a66cc;
+    --mint-blue-color4: #0d33b3;
+    --mint-blue-color5: #000099;
+}
+
+@font-face {
+    src: url('../fonts/LEMONMILK-Light.otf');
+    font-family: 'Lemon Milk';
+}
+
+@font-face {
+    src: url('../fonts/Roboto-Light.ttf');
+    font-family: 'Roboto';
+}
+
+@font-face {
+    src: url('../fonts/Sixtyfour-Regular.ttf');
+    font-family: 'Sixtyfour';
+}
+
+/*  Resetar configurações default dos elementos html*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+
+}
+
