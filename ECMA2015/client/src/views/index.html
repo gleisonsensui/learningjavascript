@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--  Normlize styles  -->
     <link rel="stylesheet" href="../public/styles/fundamentos/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="../public/styles/fundamentos/stylesheets.css"
+    />
 
     <!--  Area de styles files -->
 
@@ -17,46 +21,159 @@
   <!--  * Microdata -->
   <body>
     <header><!--  Tag semantica de Cabeçalho  --></header>
-    <main>  <!--  Tag semantica de Conteudo principal-->
+    <main class="container">
+      <!--  Tag semantica de Conteudo principal-->
+      <h1><a href="#">O que mais gosto no Distrito Federal...</a></h1>
 
-      <h1>O que mais gosto no Distrito Federal...</h1>
+      <div class="flex">
+        <section>
+          <section itemscope itemtype="https://schema.org/Place" class="place">
+            <!--  Tag semantica definindo seções de conteudo  -->
+            <h2 itemprop="name">Praça dos três poderes</h2>
+            <div class="flex">
+              <figure>
+                <img
+                  src="../public/img/trs-poderes-1-768x512.jpg"
+                  alt="Três poderes, foto por https://www.camara.leg.br/midias/image/2023/01/trs-poderes-1-768x512.jpg"
+                />
+                <figcaption>Praça dos três poderes</figcaption>
+              </figure>
+              <article>
+                <p itemprop="review">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Iusto molestiae omnis ut dolor. Non aperiam adipisci illo id
+                  dolorum. Tenetur reiciendis quasi necessitatibus architecto
+                  minus a ex repudiandae facilis voluptate!
+                </p>
+                <p itemprop="review">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+                  eveniet dicta suscipit saepe quas soluta consequatur molestias
+                  praesentium alias veritatis sequi minima, iure aut quos,
+                  expedita vero ipsa. Eum, distinctio!
+                </p>
+                <p itemprop="tourBookingPage">
+                  O que estão falando a respeito no
+                  <a
+                    href="https://twitter.com/search?q=praca%20dos%20tres%20poderes"
+                    target="_blank"
+                    >TwitterX</a
+                  >
+                </p>
+              </article>
+            </div>
+          </section>
+          <section itemscope itemtype="https://schema.org/Place" class="place">
+            <!--  Tag semantica definindo seções de conteudo  -->
+            <h2 itemprop="name">Eixo Monumental</h2>
+            <div class="flex">
+              <figure>
+                <img
+                  src="../public/img/EixoMonumental.jpg"
+                  alt="Eixo monumental, foto por https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/b5/fb/5c/img-20170319-180546-390.jpg?w=1200&h=-1&s=1"
+                />
+                <figcaption>Eixo monumental</figcaption>
+              </figure>
+              <article>
+                <p itemprop="review">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Facilis distinctio ducimus accusamus perspiciatis officiis,
+                  numquam alias, placeat perferendis, iste quae consequuntur
+                  consectetur sunt porro exercitationem maxime rem veritatis?
+                  Quam, aspernatur.
+                </p>
+                <p itemprop="review">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
+                  doloribus maiores, exercitationem molestias quibusdam
+                  doloremque aut! Numquam labore doloremque, quia molestiae,
+                  error dolores, asperiores iste laborum quos amet recusandae
+                  neque!
+                </p>
+                <p itemprop="tourBookingPage">
+                  O que estão falando a respeito no
+                  <a
+                    href="https://twitter.com/search?q=eixo%20monumental"
+                    target="_blank"
+                    >TwitterX</a
+                  >
+                </p>
+              </article>
+            </div>
+          </section>
+          <section itemscope itemtype="https://schema.org/Place" class="place">
+            <!--  Tag semantica definindo seções de conteudo  -->
+            <h2 itemprop="name">Ermida Dom Bosco</h2>
+            <div class="flex">
+              <figure>
+                <img
+                  src="../public/img/ermida.jpg"
+                  alt="Ermida Dom Bosco, foto por https://www.rebas.com.br/trilhas/medias/ermida/imagens/ermida.jpg"
+                />
+                <figcaption>Ermida Dom Bosco</figcaption>
+              </figure>
+              <article>
+                <p itemprop="review">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Facilis distinctio ducimus accusamus perspiciatis officiis,
+                  numquam alias, placeat perferendis, iste quae consequuntur
+                  consectetur sunt porro exercitationem maxime rem veritatis?
+                  Quam, aspernatur.
+                </p>
+                <p itemprop="review">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
+                  doloribus maiores, exercitationem molestias quibusdam
+                  doloremque aut! Numquam labore doloremque, quia molestiae,
+                  error dolores, asperiores iste laborum quos amet recusandae
+                  neque!
+                </p>
+                <p itemprop="tourBookingPage">
+                  O que estão falando a respeito no
+                  <a
+                    href="https://twitter.com/search?q=ermida%20dom%20bosco"
+                    target="_blank"
+                    >TwitterX</a
+                  >
+                </p>
+              </article>
+            </div>
+          </section>
 
-      
-      <section> <!--  Tag semantica definindo seções de conteudo  -->
-        <h2>Praça dos três poderes</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto molestiae omnis ut dolor. Non aperiam adipisci illo id dolorum. Tenetur reiciendis quasi necessitatibus architecto minus a ex repudiandae facilis voluptate!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit eveniet dicta suscipit saepe quas soluta consequatur molestias praesentium alias veritatis sequi minima, iure aut quos, expedita vero ipsa. Eum, distinctio!</p>
-        <p>O que estão falando a respeito no <a href="https://twitter.com/search?q=praca%20dos%20tres%20poderes" target="_blank">TwitterX</a></p>
-      </section>
-      <section> <!--  Tag semantica definindo seções de conteudo  -->
-        <h2>Eixo Monumental</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis distinctio ducimus accusamus perspiciatis officiis, numquam alias, placeat perferendis, iste quae consequuntur consectetur sunt porro exercitationem maxime rem veritatis? Quam, aspernatur.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad doloribus maiores, exercitationem molestias quibusdam doloremque aut! Numquam labore doloremque, quia molestiae, error dolores, asperiores iste laborum quos amet recusandae neque!</p>
-        <p>O que estão falando a respeito no <a href="https://twitter.com/search?q=eixo%20monumental" target="_blank">TwitterX</a></p>
-      </section>
-      <section> <!--  Tag semantica definindo seções de conteudo  -->
-        <h2>Ermida Dom Bosco</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis distinctio ducimus accusamus perspiciatis officiis, numquam alias, placeat perferendis, iste quae consequuntur consectetur sunt porro exercitationem maxime rem veritatis? Quam, aspernatur.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad doloribus maiores, exercitationem molestias quibusdam doloremque aut! Numquam labore doloremque, quia molestiae, error dolores, asperiores iste laborum quos amet recusandae neque!</p>
-        <p>O que estão falando a respeito no <a href="https://twitter.com/search?q=ermida%20dom%20bosco" target="_blank">TwitterX</a></p>
-      </section>
-
-      <!--  Exemplo de Microdata  -->
-      <section>
-        <!--  Tag de seção dentro de um conteiner principal da pagina -->
-        <h2>Conteudo com Microdados aplicados</h2>
-        <p itemscope itemtype="https://schema.org/Person">
-          Meu nome é <span itemprop="name">James Bond</span>, mas todos me
-          chamam de <span itemprop="relatedTo">Bond</span>. Esta é minha pagina
-          pessoal
-          <a href="https://pt.wikipedia.org/wiki/James_Bond" itemprop="url" target="_blank">
-            wiki: James Bond.
-          </a>
-          Moro em Londres, Inglaterra, e trabalho como
-          <span itemprop="title">detetive secreto</span> na
-          <span itemprop="affiliation">ACME Corp</span>.
-        </p>
-      </section>
+          <!--  Exemplo de Microdata  -->
+          <section>
+            <!--  Tag de seção dentro de um conteiner principal da pagina -->
+            <h2>Conteudo com Microdados aplicados</h2>
+            <p itemscope itemtype="https://schema.org/Person">
+              Meu nome é <span itemprop="name">James Bond</span>, mas todos me
+              chamam de <span itemprop="relatedTo">Bond</span>. Esta é minha
+              pagina pessoal
+              <a
+                href="https://pt.wikipedia.org/wiki/James_Bond"
+                itemprop="url"
+                target="_blank"
+              >
+                wiki: James Bond.
+              </a>
+              Moro em Londres, Inglaterra, e trabalho como
+              <span itemprop="title">detetive secreto</span> na
+              <span itemprop="affiliation">ACME Corp</span>.
+            </p>
+          </section>
+        </section>
+        <aside class="sidenote">
+          <h3>Existem muitos outros lugares interessantes na cidade...</h3>
+          <dl>
+            <dt>Lugar01</dt>
+            <dd>Description 01</dd>
+            <dt>Lugar02</dt>
+            <dd>Description 02</dd>
+            <dt>Lugar03</dt>
+            <dd>Description 03</dd>
+            <dt>Lugar04</dt>
+            <dd>Description 04</dd>
+            <dt>Lugar05</dt>
+            <dd>Description 05</dd>
+          </dl>
+        </aside>
+      </div>
     </main>
     <footer><!--  Tag semantica de Rodapé --></footer>
 
