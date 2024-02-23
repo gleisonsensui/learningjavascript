@@ -19,6 +19,17 @@ h1 a {
     padding: 0.5rem;
 }
 
+h1 a:visited {
+    color: #290ccc;
+
+}
+
+h1 a:hover {
+    background-color: #290caa;
+    color: #fff;
+
+}
+
 .container {
     margin: 0 auto;
     width: 80%;
@@ -57,7 +68,6 @@ h1 a {
     border: 1px solid#7e9f19;
     margin: 10px 10px 0 0;
     padding: 0.2rem;
-    
 }
 
 .place img {
@@ -84,16 +94,6 @@ h1 a {
 }
 
 
-h1 a:visited {
-    color: #290ccc;
-
-}
-
-h1 a:hover {
-    background-color: #290caa;
-    color: #fff;
-
-}
 
 
 
