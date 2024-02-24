@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcula consumo</title>
+    <link rel="stylesheet" href="../public/styles/styleCalc.css">
+</head>
+<body>
+    <header></header>
+    <main class="container">
+        <h3>Alcool ou Gasolina</h3>
+        <form action="">
+            <fieldset>
+                <input type="number" placeholder="Enter the average consumption per liter of Alcohol:" id="media-alcool">
+                <input type="number" placeholder="Enter the average consumption per liter of Gasoline:" id="media-gasolina">
+                <input type="number" placeholder="Enter your fuel tank capacity (In liters)" id="capacidade-combustivel">
+                <input type="number" placeholder="Enter the distance of the trip:" id="distancia-viagem">                
+                <input type="number" placeholder="Enter the price per liter of alcohol" id="preco-alcool">
+                <input type="number" placeholder="Enter the price per liter of Gasoline" id="preco-gasolina">
+            </fieldset>
+            <button type="button" id="calc-data">Calcular</button>
+        </form>
+        <hr>
+        <section class="results">
+            <h3>Resultados</h3>
+            <div class="media-consumo">
+
+            </div>
+            <div class="melhor-decisao">
+
+            </div>
+        </section>
+
+    </main>
+    <footer></footer>
+    <!-- Script Area    -->
+    <script>
+
+        const fields = [document.querySelector('#media-alcool'),document.querySelector('#media-gasolina'),document.querySelector('#capacidade-combustivel'),document.querySelector('#distancia-viagem'),document.querySelector('#tipo-combustivel'), document.querySelector('#preco-alcool'), document.querySelector('#preco-gasolina')]
+        const btnCalc = document.querySelector('#calc-data');
+
+     
+
+        function calcValor() {
+
+            clearArea();
+
+
+            [mediaAlcool, mediaGasolina, capacidade, distanciaViagem, tipo, precoAlcool, precoGasolina] = fields;
+                        
+            let distanciaAlcool = Number(mediaAlcool.value) * Number(capacidade.value);
+            let distanciaGasolina = Number(mediaGasolina.value) * Number(capacidade.value);
+            let custoGasolina = (Number(distanciaViagem.value) / Number(mediaGasolina.value))* Number(precoGasolina.value)
+            let custoAlcool = (Number(distanciaViagem.value) / Number(mediaAlcool.value))* Number(precoAlcool.value)
+            let compensa = Number(precoAlcool.value) / Number(precoGasolina.value); // se o resultado for menor 0.7, alcool compensa. Se for maior que 0.7 gasolina compensa.
+            
+            
+            let p1 = document.createElement('p');
+            p1.textContent = `A distancia percorrida com Alcool é: ${distanciaAlcool} KM`;
+            let p2 = document.createElement('p');
+            p2.textContent = `A distancia percorrida com Alcool é: ${distanciaGasolina} KM`;
+            document.querySelector('.media-consumo').appendChild(p1);
+            document.querySelector('.media-consumo').appendChild(p2);
+
+
+            let p3 = document.createElement('p');
+            p3.textContent = `O custo da viagem com Gasolina é: R$${custoGasolina.toFixed(2)}`;
+            let p4 = document.createElement('p');
+            p4.textContent = `O custo da viagem com Alcool é: R$${custoAlcool.toFixed(2)}`;
+            let p5 = document.createElement('p');
+            p5.textContent = `A compensação é : ${compensa.toFixed(2)}`;
+
+            document.querySelector('.melhor-decisao').appendChild(p3);
+            document.querySelector('.melhor-decisao').appendChild(p4);
+            document.querySelector('.melhor-decisao').appendChild(p5);
+
+            console.log(distanciaAlcool.value, distanciaGasolina.value,capacidade.value, tipo.value, precoAlcool.value, precoGasolina.value);
+            console.log(distanciaAlcool, distanciaGasolina, compensa);
+        }
+
+        function clearArea() {
+            document.querySelector('.media-consumo').textContent = '';
+            document.querySelector('.melhor-decisao').textContent = '';
+        }
+
+        btnCalc.addEventListener('click', calcValor);
+
+
+
+
+
+
+    </script>
+</body>
+</html>

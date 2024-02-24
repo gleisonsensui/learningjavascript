@@ -1,8 +1,33 @@
-.output { font-weight: bold; }
+/* Elemento centralizado no centro da pagina*/
+.container {
+    width: 80%;
+    height: 100vh;
+    margin: 0 auto;
+    border: 1px solid red;
+}
+
+input {
+    display: block;
+    width: 400px;
+    margin:0 0 5px 0 ;
+    padding: 5px;
+}
+
+button {
+    margin-top: 10px;
+    width: 100px;
+    height: 50px;
+    border-radius: 15px;
+}
+
 /* Valores calculados em negrito */
-#payment { text-decoration: underline; }
+.output { font-weight: bold; }
+
 /* Para elemento com id="payment" */
-#graph { border: solid black 1px; }
+#payment { text-decoration: underline; }
+
 /* O gráfico tem borda simples */
-th, td { vertical-align: top; }
+#graph { border: solid black 1px; }
+
 /* Não centraliza células da tabela */
+th, td { vertical-align: top; }
