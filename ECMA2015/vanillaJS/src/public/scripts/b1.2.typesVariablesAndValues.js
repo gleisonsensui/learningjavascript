@@ -45,19 +45,36 @@ Math.log(100)/Math.LN10;    // Logaritmo de base 10 de 100
 Math.log(512)/Math.LN2; // Logaritmo de base 2 de 512
 Math.exp(3);    // Math.E ao cubo
 
-// Strings
+/**
+ *   Strings
+ **/
 var s = "hello, world"; // Começa com um texto.
-s.charAt(0);    // => "h": o primeiro caractere.
-s.charAt(s.length-1);   // => "d": o último caractere.
-s.substring(1,4);   // => "ell": o 2º, 3º e 4º caracteres.
-s.slice(1,4);   // => "ell": a mesma coisa
-s.slice(-3);    // => "rld": os últimos 3 caracteres
-s.indexOf("l"); // => 2: posição da primeira letra l.
+var caixaDagua = "caixa d'agua";
+s.charAt(0);    // => "h": o primeiro caractere. Metodo que retorna o valor do indice passado como argumento
+s.charAt(s.length-1);   // => "d": o último caractere. Metodo que retorna o valor do indice passado como argumento
+s.substring(1,4);   // => "ell": o 2º, 3º e 4º caracteres. Metodo que retorna os valores dos caracteres entre os argumentos de inicio e final da coleta.
+s.slice(1,4);   // => "ell": a mesma coisa. Metodo que retorna os valores dos caracteres entre os argumentos de inicio e final da coleta.
+s.slice(-3);    // => "rld": os últimos 3 caracteres. Metodo que retorna os valores dos caracteres entre os argumentos de inicio e final da coleta.
+s.indexOf("l"); // => 2: posição da primeira letra l. Metodo que retorna os o indice do argumento informado.
 s.lastIndexOf("l"); // => 10: posição da última letra l.
-s.indexOf("l", 3);  // => 3: posição do primeiro "l" em ou após 3
+s.indexOf("l", 3);  // => 3: posição do primeiro "l" em ou após 3. Metodo que retorna os valores dos caracteres entre os argumentos de inicio e final da coleta.
 s.split(", ");  // => ["hello", "world"] divide em substrings
 s.replace("h", "H");    // => "Hello, world":
 s.toUpperCase();    // => "HELLO, WORLD"
+
+let concatenado = s + " toma uma " + caixaDagua; // Concatenação de strings
+
+let templateStr = `Template string`; // Template string que ofereces suporte a interpolação de variaveis e expressões
+let interpolado = `A soma de 150 e 90 é: ${150 + 90}`;
+//console.log(interpolado)
+
+let comparacao = 'a'.localeCompare('a', 'pt-BR'); // Comparar se o valor em 
+let comparacao2 = 'b'.localeCompare('a', 'pt-BR'); // Comparar se o valor em 
+let comparacao3 = 'b' > 'a'; // Comparar se o valor em 
+
+// console.log(comparacao)
+// console.log(comparacao2)
+// console.log(comparacao3)
 
 
 //  Comparações de cadeia de caracteres por meio de padrões textuais
@@ -68,11 +85,8 @@ let avaliada1 = "HTML";
 let avaliada2 = "hTML";
 let test1 = pattern1.test(avaliada1);
 let test2 = pattern1.test(avaliada2);
-console.log(test1, test2);
+//console.log(test1, test2);
 
-
-let text = "testing: 1, 2, 3";  // Exemplo de texto
-let pattern = /\d+/g;   // Corresponde a todas as instâncias de um ou mais dígitos
 
 pattern.test(text); // => verdadeiro: existe uma correspondência
 text.search(pattern);   // => 9: posição da primeira correspondência
@@ -93,12 +107,27 @@ let falso = false;
  */
 
 
+/**
+ * Escape Strings - A contra barra é um caractere de escape.
+ */
+'\' '
 
 
+/**
+ * REGEX - Strings
+ */
+
+const regExpression = `
+Havia um tempo
+Em que eu vivia
+Um sentimento QUASE INFANTIL
+`
+const teste = /sentimento/g.test(regExpression);
+//console.log(teste)
 
 
-
-
+let text = "testing: 1, 2, 3";  // Exemplo de texto
+let pattern = /\d+/g;   // Corresponde a todas as instâncias de um ou mais dígitos
 
 
 
