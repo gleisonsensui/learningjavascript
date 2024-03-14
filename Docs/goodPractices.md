@@ -1,3 +1,22 @@
+#   Development environment
+
+1.  Browser
+    *   Google chrome
+    *   Devtools
+2.  Shell
+    *   Terminal Bash
+    *   Powershell
+    *   CMD
+3.  IDE
+    *   VSCode
+4.  Node
+    * Node LTS
+5.  NPM
+    * npm LTS
+6.  Docker
+    *   Docker install
+
+
 # Boas praticas de desenvolvimento JavaScript
 
 * Recursos
@@ -39,7 +58,31 @@
 8.  Criar e configurar os hooks do projeto
 
 
+#   Etapas de um Projeto
+0.  Descoberta 
+    *   Gerar uma descrição de alto nivel do projeto
+        *   Definir o objetivo
+        *   Definir o cliente
+        *   Definir a dor a ser sanada
+        *   Definir o produto ou serviço a ser oferecido
 
+1.  Pesquisar o que já existe, para reduzir a quantidade de trabalho e necessidade de manutenção.
+    *   Verificar a escalabilidade da solução
+    *   Verificar se há soluções ou partes de soluções que podem ser integradas ao seu projeto
+
+2.  Planejamento inicial
+    *   Definir metodologia
+    *   Linguagem de programação
+    *   Arquitetura
+
+3.  Executar o projeto
+    3.1.   Aplicar a metodologia
+        3.1.1   Analise de requisitos
+            3.1.1.1   Levantar as necessidades do cliente
+            3.1.1.2   Levantar os objetivos do negocio
+            3.1.1.3   Levantar as personas/clientes final
+        3.1.2   Design / prototipo
+        
 
 
 

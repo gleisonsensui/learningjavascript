@@ -10,6 +10,7 @@
 let number = 10;
 let str = 'string';
 let booleano = true;
+let preco = 1993.98;
 
 // Tipos primitivos especiais
 let nulo = null;
@@ -44,6 +45,16 @@ Math.log(10);   // Logaritmo natural de 10
 Math.log(100)/Math.LN10;    // Logaritmo de base 10 de 100
 Math.log(512)/Math.LN2; // Logaritmo de base 2 de 512
 Math.exp(3);    // Math.E ao cubo
+
+
+/**
+ * Formatando valores por regiões e localidades
+ */
+
+
+console.log(preco.toLocaleString("ja-JP", { style: "currency", currency: "JPY" }));
+console.log(preco.toLocaleString("pt-BR", { style: "currency", currency: "BRL" }));
+console.log(preco.toLocaleString("de-DE", { style: "currency", currency: "EUR" }));
 
 /**
  *   Strings
@@ -88,11 +99,8 @@ let test2 = pattern1.test(avaliada2);
 //console.log(test1, test2);
 
 
-pattern.test(text); // => verdadeiro: existe uma correspondência
-text.search(pattern);   // => 9: posição da primeira correspondência
-text.match(pattern);// => ["1", "2", "3"]: array de todas as correspondências
-text.replace(pattern, "#");// => "testing: #, #, #"
-text.split(/\D+/);  // => ["","1","2","3"]: divide em não dígitos
+
+
 
 
 //  Valores booleanos
@@ -130,8 +138,11 @@ let text = "testing: 1, 2, 3";  // Exemplo de texto
 let pattern = /\d+/g;   // Corresponde a todas as instâncias de um ou mais dígitos
 
 
-
-
+text.search(pattern);   // => 9: posição da primeira correspondência
+text.match(pattern);// => ["1", "2", "3"]: array de todas as correspondências
+text.replace(pattern, "#");// => "testing: #, #, #"
+text.split(/\D+/);  // => ["","1","2","3"]: divide em não dígitos
+pattern.test(text); // => verdadeiro: existe uma correspondência
 
 
 

@@ -1,7 +1,7 @@
 "use strict";
 
 let nameUser = "Fulano";
-// Instruções de expressão são instruções que geram efeitos colaterais, seja alterando valores, estados ou comportamento.
+// Instruções de expressão são instruções que geram efeitos colaterais, ou seja, atua alterando valores, estados ou comportamentos.
 let greetings = "Hello " + nameUser;
 console.log(`Instrução de expressão: ${greetings}`);
 
@@ -184,14 +184,14 @@ function erroHandler(tgt) {
   console.log(`elemento de error: ${tgt}`);
   try {
     for (let i = 0; i < numberList.length; i++) {
-      if (numberList[i] === tgt) {
+      if (numberList[i] === tgt) { 
         throw new Error(`Isso é uma exceção injetada pelo Throw`);
       } else {
         console.log(`Instrução de continue iteração: ${numberList[i]}`);
       }
     }
-  } catch (error) {
-    console.error(error);
+  } catch (e){
+    console.error(e);
   } finally {
     console.log(`Instrução de error throw/finally: ${numberList}`);
   }

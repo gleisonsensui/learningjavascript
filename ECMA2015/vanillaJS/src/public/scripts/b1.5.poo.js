@@ -86,9 +86,15 @@ addStock(portifolio, 'Microsoft', 350);
 console.log(portifolio);
 
 
+let produto = {
+    _nome: 'caneta BIC',
+    preco: 9.99,
+    estoque: true
+}
 
-
-
+console.log(produto);
+produto.nome  = 'notebook Lenovo';
+console.log(produto);
 
 
 
