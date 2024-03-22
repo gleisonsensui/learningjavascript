@@ -4,6 +4,31 @@
  * engine do ECMAScript
  */
 
+/**
+ * 
+## Tipos de erros
+
+O JavaScript possui os seguintes tipos de erros nativos que podem ser lançados:
+
+### ReferenceError
+Lançado quando uma referência a uma variável ou função inexistente ou inválida é detectada.
+
+### TypeError
+Lançado quando um operador ou argumento passado para a função é de um tipo diferente do esperado.
+
+### SyntaxError
+Lançado quando ocorre algum erro de sintaxe ao interpretar o código, por exemplo ao realizar o parse de um JSON.
+
+### URIError
+Lançado quando ocorre algum erro no tratamento de URI, por exemplo, enviando parâmetros inválidos no decodeURI() ou encodeURI().
+
+### RangeError
+Lançado quando um valor não está no conjunto ou intervalo de valores permitidos. Por exemplo, um valor em string num array número.
+
+Todos os erros nativos do JavaScript, são extensões do objeto Error, partindo deste principio, você também pode criar seus próprios tipos de erros.
+
+ */
+
 // Variaveis são declarada com o rotulo VAR
 var variavel;
 
@@ -27,7 +52,7 @@ valor = false; // valor falso tipo boolean
 valor = null; // valor null que significa sem valor ou nulo.
 valor = undefined; // valor que significa valor atribuido sem tipo definido ou esteja vazio.
 
-// O JavaScript possui dois tipos que podem ser manipulado, conforme suas caracteristicas.
+// O JavaScript possui dois tipos complexos que podem ser manipulado, conforme suas caracteristicas.
 const bruxo = {
   nome: "Harry Potter",
   idade: 12,
@@ -87,7 +112,6 @@ const funcionarios = [
   },
 ];
 
-
 /**
  * JavaScript pode realizar diversas operações aritmeticas
  */
@@ -113,19 +137,15 @@ console.log(`A potenciação é: ${potenciacao}`);
  * JavaScript possui um arcabouço de funções para aplicar nos codigos.
  */
 function somar(a, b) {
-    return a + b;
+  return a + b;
 }
 
-const subtr = function(a, b) {
-    return a - b;
-}
+const subtr = function (a, b) {
+  return a - b;
+};
 
 const multip = (a, b) => a * b;
 
 console.log(somar(5, 5));
 console.log(subtr(9, 6));
-console.log(multip(5, 3))
-
-
-
-
+console.log(multip(5, 3));

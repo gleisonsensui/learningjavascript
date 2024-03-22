@@ -97,22 +97,47 @@ produto.nome  = 'notebook Lenovo';
 console.log(produto);
 
 
+// Destructuring
+const tenis = {
+    tamanho: 45,
+    estoque: true,
+    marcas: [{nome: 'nike'}, {nome: 'adidas'}],
+    codigo: '0123456252',
+    n: 5,
+    link: {site: 'http', blog: {games: 'pc', tecnologia: {security: 'ciber security', blockchain: 'cripto moedas'}}}
+}
+
+const {tamanho, estoque, marcas, codigo: id, n: avalicao} = tenis;
+
+const {link:{site, blog: {tecnologia: {blockchain: cripto}}}} = tenis;
+
+console.log(tamanho, estoque, marcas, id, avalicao);
+
+console.log(site, cripto);
 
 
 
+// descobrir propiedades do objeto
+console.log(tenis.hasOwnProperty('test'));
+console.log('link' in tenis);
 
 
 
+// Mesclar e clonar um objeto
+let clone1 = Object.assign(cloneObject(tenis), cloneObject(produto));
+let agrupado = {...cloneObject(tenis), ...cloneObject(produto)};
 
 
 
+console.log(clone1)
+console.log(agrupado);
 
 
 
-
-
-
-
+// Objetos rasos e objetos profundos
+function cloneObject (obj) {
+    return JSON.parse(JSON.stringify(obj))
+}
 
 
 

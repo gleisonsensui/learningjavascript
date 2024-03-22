@@ -50,11 +50,12 @@ Math.exp(3);    // Math.E ao cubo
 /**
  * Formatando valores por regiões e localidades
  */
-
-
-console.log(preco.toLocaleString("ja-JP", { style: "currency", currency: "JPY" }));
-console.log(preco.toLocaleString("pt-BR", { style: "currency", currency: "BRL" }));
-console.log(preco.toLocaleString("de-DE", { style: "currency", currency: "EUR" }));
+preco = new Intl.NumberFormat("ja-JP", { style: "currency", currency: "JPY" }).format(preco);
+console.log('Yene:', preco, typeof preco);
+preco = preco.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
+//console.log('Real: ', preco);
+preco = preco.toLocaleString("de-DE", { style: "currency", currency: "EUR" });
+//console.log('Euro: ', preco);
 
 /**
  *   Strings

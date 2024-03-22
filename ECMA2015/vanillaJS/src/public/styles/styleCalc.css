@@ -31,3 +31,11 @@ button {
 
 /* Não centraliza células da tabela */
 th, td { vertical-align: top; }
+
+
+.imc, .tabuada {
+    border: 1px solid #000;
+}
+
+
+
