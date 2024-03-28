@@ -1,33 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jquery Learning</title>
-    <link rel="stylesheet" href="../public/styles/stylesheet.css">
-    
+    <link rel="stylesheet" href="../public/styles/normalize.css" />
+    <link rel="stylesheet" href="../public/styles/stylesheet.css" />
+
     <!--    Area de Script  -->
     <!--
         <script src="../public/scripts/jq1.01.intro.js" defer></script>
-
     -->
     <script src="../public/scripts/jquery-3.7.1.min.js" defer></script>
-    <script src="../public/scripts/jq1.03.styles.js" defer></script>
-</head>
-<body>
+    <script src="../public/scripts/jq1.00.general.js" defer></script>
+    <script src="../public/scripts/jq1.02.classHandler.js" defer></script>
+    <script src="../public/scripts/jq1.03.eventsHandler.js" defer></script>
+    <script src="../public/scripts/jq1.04.stylesHandler.js" defer></script>
+    <script src="../public/scripts/jq1.05.animationsHandler.js" defer></script>
+  </head>
+  <body>
+    <p class="paragraph-test">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa nobis doloremque reiciendis, assumenda accusamus at eligendi et minus dolore debitis tenetur saepe voluptate, hic ducimus, consequatur quibusdam? Necessitatibus, quae laborum.</p>
     <header>
-        <nav>
-            <div><img src="" alt=""></div>
-            <ul>
-                <li><a href="#">Seção 01</a></li>
-                <li><a href="#">Seção 02</a></li>
-                <li><a href="#">Seção 03</a></li>
-                <li><a href="#">Seção 04</a></li>
-                <li><a href="#">Seção 05</a></li>
+      <nav class="navigation">
+        <div class="navigation-inner site-container">
+          <img src="../public/img/jsimg.png" alt="logo" id="logo" />
+          <div class="main-navigation">
+            <ul class="main-navigation-menu">
+              <li><a href="#fundamentos" class="menu-item">Fundamentos JQuery</a></li>
+              <li><a href="#dom" class="menu-item">DOM</a></li>
+              <li><a href="#styles-css" class="menu-item">Styles e CSS</a></li>
+              <li><a href="#eventos" class="menu-item">Eventos</a></li>
+              <li><a href="#animacoes" class="menu-item">Animações</a></li>
+              <li><a href="#ajax" class="menu-item">Ajax</a></li>
+              <li><a href="#validacao" class="menu-item">Validacão de formularios</a></li>
             </ul>
-
-        </nav>
+          </div>
+          <div class="btn-burguer burguer-container">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        </div>
+      </nav>
     </header>
-    
-</body>
+    <div class="ghost"></div>
+    <main>
+      <section class="fundamentos" id="fundamentos">
+        <article>
+          <h2>Fundamentos do JQuery</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate,
+            dolorum nisi. Rerum enim sint, accusamus non, sunt cum quam ad
+            assumenda ipsum repellendus, ipsam unde soluta amet natus qui
+            tempora.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+            ullam commodi, enim velit pariatur quasi rem necessitatibus nobis
+            modi cupiditate cum suscipit quae, reprehenderit voluptatem,
+            excepturi minima iste ipsam aspernatur?
+          </p>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam,
+            delectus ratione! Fugit accusamus id quaerat dicta, fugiat
+            perspiciatis ab cupiditate dolor exercitationem. Accusamus tenetur
+            obcaecati fugit neque, odio atque tempore?
+          </p>
+        </article>
+        <div>
+            <aside>
+                <nav>
+                    <ul>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                    </ul>
+                </nav>
+            </aside>
+        </div>
+        <div>
+            <figure>
+                <img src="" alt="">
+                <figcaption></figcaption>
+            </figure>
+        </div>
+        <div>
+            <video src="" controls></video>
+        </div>
+        <div>
+            <audio src="" controls></audio>
+        </div>
+      </section>
+      <section class="dom" id="dom">
+        <article>
+          <h2>Manipulação do DOM</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate,
+            dolorum nisi. Rerum enim sint, accusamus non, sunt cum quam ad
+            assumenda ipsum repellendus, ipsam unde soluta amet natus qui
+            tempora.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+            ullam commodi, enim velit pariatur quasi rem necessitatibus nobis
+            modi cupiditate cum suscipit quae, reprehenderit voluptatem,
+            excepturi minima iste ipsam aspernatur?
+          </p>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam,
+            delectus ratione! Fugit accusamus id quaerat dicta, fugiat
+            perspiciatis ab cupiditate dolor exercitationem. Accusamus tenetur
+            obcaecati fugit neque, odio atque tempore?
+          </p>
+        </article>
+        <div>
+            <aside>
+                <nav>
+                    <ul>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                    </ul>
+                </nav>
+            </aside>
+        </div>
+        <div>
+            <figure>
+                <img src="" alt="">
+                <figcaption></figcaption>
+            </figure>
+        </div>
+        <div>
+            <video src="" controls></video>
+        </div>
+        <div>
+            <audio src="" controls></audio>
+        </div>
+        <div class="list-area">
+          <ul>
+            <li><a href="https://google.com" target="_blank">Google</a></li>
+            <li><a href="https://bing.com" target="_blank">Bing</a></li>
+            <li><a href="https://yahoo.com" target="_blank">Yahoo</a></li>
+            <li><a href="https://instagram.com" target="_blank">instagram</a></li>
+          </ul>
+        </div>
+      </section>
+      <section class="styles-css" id="styles-css">
+        <article>
+          <h2>Estilos e CSS</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate,
+            dolorum nisi. Rerum enim sint, accusamus non, sunt cum quam ad
+            assumenda ipsum repellendus, ipsam unde soluta amet natus qui
+            tempora.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+            ullam commodi, enim velit pariatur quasi rem necessitatibus nobis
+            modi cupiditate cum suscipit quae, reprehenderit voluptatem,
+            excepturi minima iste ipsam aspernatur?
+          </p>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam,
+            delectus ratione! Fugit accusamus id quaerat dicta, fugiat
+            perspiciatis ab cupiditate dolor exercitationem. Accusamus tenetur
+            obcaecati fugit neque, odio atque tempore?
+          </p>
+        </article>
+        <div>
+      </section>
+      <section class="eventos" id="eventos">
+        <button class="btn-click">Clique aqui</button>
+        <button class="btn-dbclick">Clique duas vezes</button>
+        <button class="btn-hover">Passe o mouse aqui</button>
+        <div class="output-area"></div>
+        <input type="text" class="input-test" placeholder="digite seu nome">
+      </section>
+      <section class="animacoes" id="animacoes">
+        <div class="quadrado-1"></div>
+        <div class="quadrado-2"></div>
+        <div class="quadrado-3"></div>
+        <div class="quadrado-4"></div>
+      </section>
+      <section class="ajax" id="ajax">
+        <article>
+          <h2>Ajax</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate,
+            dolorum nisi. Rerum enim sint, accusamus non, sunt cum quam ad
+            assumenda ipsum repellendus, ipsam unde soluta amet natus qui
+            tempora.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+            ullam commodi, enim velit pariatur quasi rem necessitatibus nobis
+            modi cupiditate cum suscipit quae, reprehenderit voluptatem,
+            excepturi minima iste ipsam aspernatur?
+          </p>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam,
+            delectus ratione! Fugit accusamus id quaerat dicta, fugiat
+            perspiciatis ab cupiditate dolor exercitationem. Accusamus tenetur
+            obcaecati fugit neque, odio atque tempore?
+          </p>
+        </article>
+      </section>
+      </section>
+      <section class="validacao" id="validacao">
+        <form action="/registration" method="get">
+          <input type="text" placeholder="digite seu nome">
+        </form>
+      </section>
+    </main>
+  </body>
 </html>

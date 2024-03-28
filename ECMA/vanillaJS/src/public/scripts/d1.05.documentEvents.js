@@ -1,6 +1,7 @@
 "use strict";
 
 const btn = document.querySelector("#btn-register");
+const input = document.querySelector('#name');
 
 // EventListener
 btn.addEventListener("click", (evn) => {
@@ -10,6 +11,11 @@ btn.addEventListener("click", (evn) => {
 
 // Target Listener
 const menu = document.querySelector("#menu");
+
+/**
+ * Eventos
+ * click, mouseover, mousedrag, 
+ */
 
 menu?.addEventListener("click", (evn) => {
   const { target } = evn;
@@ -31,3 +37,19 @@ menu?.addEventListener("click", (evn) => {
 
 
 });
+
+
+input.addEventListener('input', (evn) => {
+  console.log(evn.target.value);
+})
+
+
+
+
+
+
+
+
+
+
+
